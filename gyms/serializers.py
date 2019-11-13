@@ -3,41 +3,15 @@ from rest_framework import serializers
 from .models import Gym, Discipline, Class
 
 
-#nested in class model.  Attempt to pre-populate classes in the class model :(
-
-# class NestedClass_levelSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Class
-#         fields = ('id', 'level')
-
-
-# class NestedClass_categorySerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Class
-#         fields = ('id', 'class_category')
-
-
-# class Class_levelSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Class_level
-#         fields = ('id', 'level')
-
-
-
-# class Class_categorySerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Class_category
-#         fields = ('id', 'class_category')
-
-
-
 class NestedGymSerializer(serializers.ModelSerializer):
     class Meta:
         model = Gym
-        fields = ('id' 'name')
+        fields = ('id' 'name', 'class')
 
 
 class NestedClassSerializer(serializers.ModelSerializer):
+
+
     class Meta:
         model = Class
         fields = ('id', 'title', 'class_level', 'category', 'class_availability', 'class_duration', 'link')
@@ -57,26 +31,27 @@ class DisciplineSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Discipline
-        fields = ('id', 'gyms')
+        fields = ('id', 'discipline_type', 'gyms')
 
 
 class ClassSerializer(serializers.ModelSerializer):
 
     gyms = NestedGymSerializer(many=True)
     
+    
     class Meta:
         model = Class
-        fields = ('id', 'title', 'class_level', 'category', 'class_availability', 'class_duration', 'link', 'gyms')
+        fields = ('id', 'title', 'class_level', 'category', 'class_availability', 'class_duration', 'link')
 
 
 class GymSerializer(serializers.ModelSerializer):
 
-    # discipline_type = NestedDisciplineSerializer()
+    discipline = NestedDisciplineSerializer()
     classes = NestedClassSerializer(many=True)
 
     def create(self, data):
-        classes_data = data.pop('class')
-        discipline_data = data.pop('disciplines')
+        classes_data = data.pop('classes')
+        discipline_data = data.pop('discipline')
 
         gym = Gym(**data)
         gym.discipline = Discipline.objects.get(**discipline_data)
@@ -105,4 +80,4 @@ class GymSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Gym
-        fields = ('id', 'image', 'name', 'lat', 'lon', 'has_classes', 'classes')
+        fields = ('id', 'image', 'name', 'lat', 'lon', 'has_classes', 'discipline', 'classes')

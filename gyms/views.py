@@ -14,3 +14,12 @@ class GymListView(ListCreateAPIView):
 class GymDetailsView(RetrieveUpdateDestroyAPIView):
     queryset = Gym.objects.all()
     serializer_class = GymSerializer
+
+
+class ClassListView(ListCreateAPIView):
+    queryset = Class.objects.all()
+    serializer_class = ClassSerializer
+
+class DisciplineListView(ListCreateAPIView):
+    queryset = Discipline.objects.all()
+    serializer_class = DisciplineSerializer

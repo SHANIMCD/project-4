@@ -1,11 +1,5 @@
 from django.db import models
 
-class Discipline(models.Model):
-    discipline_type = models.CharField(max_length=100)
-
-    def __str__(self):
-        return self.discipline_type
-
 
 # class Class_level(models.Model):
 #     level = models.CharField(max_length=50)
@@ -35,6 +29,12 @@ class Class(models.Model):
         return self.title
 
 
+class Discipline(models.Model):
+    discipline_type = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.discipline_type
+
 
 class Gym(models.Model):
     image = models.CharField(max_length=100)
@@ -44,7 +44,7 @@ class Gym(models.Model):
     has_classes = models.BooleanField(default=False)
     discipline = models.ForeignKey(
         Discipline,
-        related_name='gyms', 
+        related_name='gyms',
         on_delete=models.DO_NOTHING,
         null=True
         )
