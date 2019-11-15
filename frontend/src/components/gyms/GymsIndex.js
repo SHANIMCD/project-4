@@ -1,7 +1,8 @@
 import React from 'react'
 import axios from 'axios'
 
-import GymCardIndex from './GymCardIndex'
+import SearchBox from '../common/SearchBox'
+import GymCardShow from './GymCardShow'
 
 class GymsIndex extends React.Component {
 
@@ -24,16 +25,20 @@ class GymsIndex extends React.Component {
     console.log(this.state)
     if (!this.state.gyms) return null
     return (
-
+    
       <div>
-        <div>
+        <SearchBox />
+
+        <div className="indexContainer">
           {this.state.gyms.map(gym => (
             
-            <GymCardIndex key={gym._id}{...gym}/>
+            <GymCardShow key={gym.id}{...gym}/>
           ))}
         </div>
+        
       </div>
-
+      
+   
       
 
     )
@@ -48,7 +53,7 @@ export default GymsIndex
 // .catch(err => console.log(err))
 
 // <div key={gym._id}>
-            //   <h2>{gym.name}</h2>
-            //   <img src={gym.image}/>
-            //   <p>{gym.discipline.discipline_type}</p>
-            // </div>
+//   <h2>{gym.name}</h2>
+//   <img src={gym.image}/>
+//   <p>{gym.discipline.discipline_type}</p>
+// </div>
