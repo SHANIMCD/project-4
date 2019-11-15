@@ -16,7 +16,7 @@ class GymDetailsView(RetrieveUpdateDestroyAPIView):
     serializer_class = GymSerializer
 
 
-class ClassListView(ListCreateAPIView):
+class ClassListView(ListAPIView):
     queryset = Class.objects.all()
     serializer_class = ClassSerializer
 

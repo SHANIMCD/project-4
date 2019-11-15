@@ -1,0 +1,640 @@
+[
+    {
+    "id": 4,
+    "image": "https://pbs.twimg.com/profile_images/1148166683259015169/iSBOg7ub_400x400.jpg",
+    "name": "Gymbox Covent Garden",
+    "lat": 51.5142,
+    "lon": 0.1247,
+    "has_classes": true,
+    "discipline": {
+        "id": 1,
+        "discipline_type": "Bodybuilding"
+    },
+    "classes": [
+        {
+            "id": 4,
+            "title": "Pilates"
+        },
+        {
+            "id": 5,
+            "title": "Brexfit"
+        },
+        {
+            "id": 6,
+            "title": "Sweat To The Beat"
+        },
+        {
+            "id": 7,
+            "title": "Functional Bodybuilding"
+        },
+        {
+            "id": 8,
+            "title": "Cavemen & Neandergals"
+        },
+        {
+            "id": 9,
+            "title": "Gain Train"
+        },
+        {
+            "id": 10,
+            "title": "Ultimate Fit"
+        }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://pbs.twimg.com/profile_images/1148166683259015169/iSBOg7ub_400x400.jpg",
+    "name": "Gymbox Farringdon",
+    "lat": 51.5201,
+    "lon": 0.1048,
+    "has_classes": true,
+    "discipline": {
+        "id": 1,
+        "discipline_type": "Bodybuilding"
+    },
+    "classes": [
+        {
+            "id": 3,
+            "title": "Aerial Pilates"
+        },
+        {
+            "id": 4,
+            "title": "Pilates"
+        },
+        {
+            "id": 5,
+            "title": "Brexfit"
+        },
+        {
+            "id": 6,
+            "title": "Sweat To The Beat"
+        },
+        {
+            "id": 7,
+            "title": "Functional Bodybuilding"
+        },
+        {
+            "id": 8,
+            "title": "Cavemen & Neandergals"
+        },
+        {
+            "id": 9,
+            "title": "Gain Train"
+        },
+        {
+            "id": 10,
+            "title": "Ultimate Fit"
+        }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://pbs.twimg.com/profile_images/1148166683259015169/iSBOg7ub_400x400.jpg",
+    "name": "Gymbox Holborn",
+    "lat": 51.5167,
+    "lon": 0.1167,
+    "has_classes": true,
+    "discipline": {
+        "id": 1,
+        "discipline_type": "Bodybuilding"
+    },
+    "classes": [
+        {
+            "id": 3,
+            "title": "Aerial Pilates"
+        },
+        {
+            "id": 4,
+            "title": "Pilates"
+        },
+        {
+            "id": 5,
+            "title": "Brexfit"
+        },
+        {
+            "id": 6,
+            "title": "Sweat To The Beat"
+        },
+        {
+            "id": 7,
+            "title": "Functional Bodybuilding"
+        },
+        {
+            "id": 8,
+            "title": "Cavemen & Neandergals"
+        },
+        {
+            "id": 9,
+            "title": "Gain Train"
+        },
+        {
+            "id": 10,
+            "title": "Ultimate Fit"
+        }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://pbs.twimg.com/profile_images/1148166683259015169/iSBOg7ub_400x400.jpg",
+    "name": "Gymbox Victoria",
+    "lat": 51.4962,
+    "lon": 0.144,
+    "has_classes": true,
+    "discipline": {
+        "id": 1,
+        "discipline_type": "Bodybuilding"
+    },
+    "classes": [
+        {
+            "id": 3,
+            "title": "Aerial Pilates"
+        },
+        {
+            "id": 4,
+            "title": "Pilates"
+        },
+        {
+            "id": 5,
+            "title": "Brexfit"
+        },
+        {
+            "id": 6,
+            "title": "Sweat To The Beat"
+        },
+        {
+            "id": 7,
+            "title": "Functional Bodybuilding"
+        },
+        {
+            "id": 8,
+            "title": "Cavemen & Neandergals"
+        },
+        {
+            "id": 9,
+            "title": "Gain Train"
+        },
+        {
+            "id": 10,
+            "title": "Ultimate Fit"
+        }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://pbs.twimg.com/profile_images/1148166683259015169/iSBOg7ub_400x400.jpg",
+    "name": "Gymbox Westfield Stratford",
+    "lat": 51.5472,
+    "lon": 0.0081,
+    "has_classes": true,
+    "discipline": {
+        "id": 1,
+        "discipline_type": "Bodybuilding"
+    },
+    "classes": [
+        {
+            "id": 3,
+            "title": "Aerial Pilates"
+        },
+        {
+            "id": 4,
+            "title": "Pilates"
+        },
+        {
+            "id": 5,
+            "title": "Brexfit"
+        },
+        {
+            "id": 6,
+            "title": "Sweat To The Beat"
+        },
+        {
+            "id": 7,
+            "title": "Functional Bodybuilding"
+        },
+        {
+            "id": 8,
+            "title": "Cavemen & Neandergals"
+        },
+        {
+            "id": 9,
+            "title": "Gain Train"
+        },
+        {
+            "id": 10,
+            "title": "Ultimate Fit"
+        }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://pbs.twimg.com/profile_images/1148166683259015169/iSBOg7ub_400x400.jpg",
+    "name": "Gymbox Westfield White City",
+    "lat": 51.5134,
+    "lon": 0.2323,
+    "has_classes": true,
+    "discipline": {
+        "id": 1,
+        "discipline_type": "Bodybuilding"
+    },
+    "classes": [
+        {
+            "id": 3,
+            "title": "Aerial Pilates"
+        },
+        {
+            "id": 4,
+            "title": "Pilates"
+        },
+        {
+            "id": 5,
+            "title": "Brexfit"
+        },
+        {
+            "id": 6,
+            "title": "Sweat To The Beat"
+        },
+        {
+            "id": 7,
+            "title": "Functional Bodybuilding"
+        },
+        {
+            "id": 8,
+            "title": "Cavemen & Neandergals"
+        },
+        {
+            "id": 9,
+            "title": "Gain Train"
+        },
+        {
+            "id": 10,
+            "title": "Ultimate Fit"
+        }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://pbs.twimg.com/profile_images/1148166683259015169/iSBOg7ub_400x400.jpg",
+    "name": "Gymbox Elephant & Castle",
+    "lat": 51.4959,
+    "lon": 0.1005,
+    "has_classes": true,
+    "discipline": {
+        "id": 1,
+        "discipline_type": "Bodybuilding"
+    },
+    "classes": [
+        {
+            "id": 3,
+            "title": "Aerial Pilates"
+        },
+        {
+            "id": 4,
+            "title": "Pilates"
+        },
+        {
+            "id": 5,
+            "title": "Brexfit"
+        },
+        {
+            "id": 6,
+            "title": "Sweat To The Beat"
+        },
+        {
+            "id": 7,
+            "title": "Functional Bodybuilding"
+        },
+        {
+            "id": 8,
+            "title": "Cavemen & Neandergals"
+        },
+        {
+            "id": 9,
+            "title": "Gain Train"
+        },
+        {
+            "id": 10,
+            "title": "Ultimate Fit"
+        }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://pbs.twimg.com/profile_images/1148166683259015169/iSBOg7ub_400x400.jpg",
+    "name": "Gymbox Old Street",
+    "lat": 51.52565,
+    "lon": 0.09052,
+    "has_classes": true,
+    "discipline": {
+        "id": 1,
+        "discipline_type": "Bodybuilding"
+    },
+    "classes": [
+        {
+            "id": 3,
+            "title": "Aerial Pilates"
+        },
+        {
+            "id": 4,
+            "title": "Pilates"
+        },
+        {
+            "id": 5,
+            "title": "Brexfit"
+        },
+        {
+            "id": 6,
+            "title": "Sweat To The Beat"
+        },
+        {
+            "id": 7,
+            "title": "Functional Bodybuilding"
+        },
+        {
+            "id": 8,
+            "title": "Cavemen & Neandergals"
+        },
+        {
+            "id": 9,
+            "title": "Gain Train"
+        },
+        {
+            "id": 10,
+            "title": "Ultimate Fit"
+        }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://pbs.twimg.com/profile_images/1148166683259015169/iSBOg7ub_400x400.jpg",
+    "name": "Gymbox Bank",
+    "lat": 51.5129,
+    "lon": 0.08774,
+    "has_classes": true,
+    "discipline": {
+        "id": 1,
+        "discipline_type": "Bodybuilding"
+    },
+    "classes": [
+        {
+            "id": 3,
+            "title": "Aerial Pilates"
+        },
+        {
+            "id": 4,
+            "title": "Pilates"
+        },
+        {
+            "id": 5,
+            "title": "Brexfit"
+        },
+        {
+            "id": 6,
+            "title": "Sweat To The Beat"
+        },
+        {
+            "id": 7,
+            "title": "Functional Bodybuilding"
+        },
+        {
+            "id": 8,
+            "title": "Cavemen & Neandergals"
+        },
+        {
+            "id": 9,
+            "title": "Gain Train"
+        },
+        {
+            "id": 10,
+            "title": "Ultimate Fit"
+        }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://pbs.twimg.com/profile_images/1148166683259015169/iSBOg7ub_400x400.jpg",
+    "name": "Gymbox Cannon Street",
+    "lat": 51.51095,
+    "lon": 0.0893,
+    "has_classes": true,
+    "discipline": {
+        "id": 1,
+        "discipline_type": "Bodybuilding"
+    },
+    "classes": [
+        {
+            "id": 3,
+            "title": "Aerial Pilates"
+        },
+        {
+            "id": 4,
+            "title": "Pilates"
+        },
+        {
+            "id": 5,
+            "title": "Brexfit"
+        },
+        {
+            "id": 6,
+            "title": "Sweat To The Beat"
+        },
+        {
+            "id": 7,
+            "title": "Functional Bodybuilding"
+        },
+        {
+            "id": 8,
+            "title": "Cavemen & Neandergals"
+        },
+        {
+            "id": 9,
+            "title": "Gain Train"
+        },
+        {
+            "id": 10,
+            "title": "Ultimate Fit"
+        }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://pbs.twimg.com/profile_images/1148166683259015169/iSBOg7ub_400x400.jpg",
+    "name": "Gymbox Ealing",
+    "lat": 51.51331,
+    "lon": 0.30814,
+    "has_classes": true,
+    "discipline": {
+        "id": 1,
+        "discipline_type": "Bodybuilding"
+    },
+    "classes": [
+        {
+            "id": 3,
+            "title": "Aerial Pilates"
+        },
+        {
+            "id": 4,
+            "title": "Pilates"
+        },
+        {
+            "id": 5,
+            "title": "Brexfit"
+        },
+        {
+            "id": 6,
+            "title": "Sweat To The Beat"
+        },
+        {
+            "id": 7,
+            "title": "Functional Bodybuilding"
+        },
+        {
+            "id": 8,
+            "title": "Cavemen & Neandergals"
+        },
+        {
+            "id": 9,
+            "title": "Gain Train"
+        },
+        {
+            "id": 10,
+            "title": "Ultimate Fit"
+        }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEA8PDw8PDw8PDw8PDg8PDw8PDRAQFREWFhURF",
+    "name": "Bodymap Pilates",
+    "lat": 51.50266,
+    "lon": 0.07606,
+    "has_classes": true,
+    "discipline": {
+        "id": 2,
+        "discipline_type": "Pilates"
+    },
+    "classes": [
+        {
+            "id": 16,
+            "title": "Core focus"
+        },
+        {
+            "id": 17,
+            "title": "Pilates Mat"
+        },
+        {
+            "id": 18,
+            "title": "Pilates Barre"
+        },
+        {
+            "id": 19,
+            "title": "Reformer Pilates"
+        },
+        {
+            "id": 20,
+            "title": "Reformer Pilates - Int"
+        }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://pbs.twimg.com/profile_images/1654084796/Naught-_JPEG_400x400.jpg",
+    "name": "Tempo Pilates E1",
+    "lat": 51.52382,
+    "lon": 0.07295,
+    "has_classes": true,
+    "discipline": {
+        "id": 2,
+        "discipline_type": "Pilates"
+    },
+    "classes": [
+        {
+            "id": 11,
+            "title": "Pilates L1"
+        },
+        {
+            "id": 12,
+            "title": "Contemporary Pilates"
+        },
+        {
+            "id": 13,
+            "title": "Tempo Pilates L1"
+        },
+        {
+            "id": 14,
+            "title": "Tempo Pilates L2"
+        },
+        {
+            "id": 15,
+            "title": "Up-Tempo Pilates L3"
+        }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://pbs.twimg.com/profile_images/1654084796/Naught-_JPEG_400x400.jpg",
+    "name": "Tempo Pilates WC2",
+    "lat": 51.5105,
+    "lon": 0.12673,
+    "has_classes": true,
+    "discipline": {
+        "id": 2,
+        "discipline_type": "Pilates"
+    },
+    "classes": [
+        {
+            "id": 11,
+            "title": "Pilates L1"
+        },
+        {
+            "id": 12,
+            "title": "Contemporary Pilates"
+        },
+        {
+            "id": 13,
+            "title": "Tempo Pilates L1"
+        },
+        {
+            "id": 14,
+            "title": "Tempo Pilates L2"
+        },
+        {
+            "id": 15,
+            "title": "Up-Tempo Pilates L3"
+        }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://pbs.twimg.com/profile_images/1654084796/Naught-_JPEG_400x400.jpg",
+    "name": "Tempo Pilates E8",
+    "lat": 51.54442,
+    "lon": 0.05857,
+    "has_classes": true,
+    "discipline": {
+        "id": 2,
+        "discipline_type": "Pilates"
+    },
+    "classes": [
+        {
+            "id": 11,
+            "title": "Pilates L1"
+        },
+        {
+            "id": 12,
+            "title": "Contemporary Pilates"
+        },
+        {
+            "id": 13,
+            "title": "Tempo Pilates L1"
+        },
+        {
+            "id": 14,
+            "title": "Tempo Pilates L2"
+        },
+        {
+            "id": 15,
+            "title": "Up-Tempo Pilates L3"
+        }
+    ]
+  }
+]

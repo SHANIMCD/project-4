@@ -37,10 +37,11 @@ class Discipline(models.Model):
 
 
 class Gym(models.Model):
-    image = models.CharField(max_length=100)
+    image = models.CharField(max_length=500)
     name = models.CharField(max_length=50, unique=True)
     lat = models.FloatField()
     lon = models.FloatField()
+    address = models.TextField(max_length=500)
     has_classes = models.BooleanField(default=False)
     discipline = models.ForeignKey(
         Discipline,
@@ -52,7 +53,7 @@ class Gym(models.Model):
     classes = models.ManyToManyField(
         Class,
         related_name='gyms',
-        blank=True
+        null=True
         )
     
     def __str__(self):

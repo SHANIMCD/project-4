@@ -1,0 +1,31 @@
+
+//-- Pallet -- //
+$darkest: #384D48;
+$dark: #466365;
+$neutral: #93A8AC;
+$light: #E0E2DB;
+$pop-yellow: #FAF33E;
+$pop-green: #06D6A0;
+
+//--- Fonts---//
+//Header
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+//font-family: 'Didact Gothic', sans-serif;
+
+//<P> Misc
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+//font-family: 'Quicksand', sans-serif;
+
+
+
+.hero {
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  background-position:center;
+  min-height:60vh;
+  text-align:center;
+  color:white;
+  text-shadow:1px 1px 1px black;
+  line-height:60vh;
+  }
