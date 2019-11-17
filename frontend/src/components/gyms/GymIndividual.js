@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
-import GymCard from './GymCardIndex'
+// import GymCardIndex from './GymCardIndex'
+import GymCardShow from './GymCardShow'
 
 
 
@@ -9,7 +10,18 @@ class GymIndividual extends React.Component {
     super()
 
     this.state = {
-      gym: null
+      // data: {
+      //   name: '',
+      //   image: '',
+      //   lat: '',
+      //   lon: '',
+      //   discipline: '',
+      //   address: '',
+      //   classes: []
+      // }
+      gym: null,
+      class: null
+      
     }
   }
 
@@ -21,20 +33,21 @@ class GymIndividual extends React.Component {
       .catch(err => console.log(err))
   }
 
+  
   render() {
     if (!this.state.gym) return null
     const { gym } = this.state
     return (
       
       <>
-      <h1>Gym Individual page</h1>
-
-      <GymCard key={gym.id} {...gym}/>
-
-      
-
-
-      
+      <body>
+        <section>
+          <h1>Gym Individual page</h1>
+        </section>
+        <section>
+          <GymCardShow key={gym._id} {...gym}/>
+        </section>
+      </body>
       </>
     )
   }

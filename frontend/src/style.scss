@@ -17,6 +17,9 @@ $pop-green: #06D6A0;
 //font-family: 'Quicksand', sans-serif;
 
 
+body {
+  height: 100vh;
+}
 
 .hero {
   background-repeat:no-repeat;
@@ -30,6 +33,43 @@ $pop-green: #06D6A0;
   line-height:60vh;
   }
 
+  main {
+    display: flex;
+  }
 
-//Gym cards
+
+.filtercontainer {
+  background-color: #06D6A0;
+  
+  .search-input {
+  background-color: $neutral;
+  flex-direction: column;
+  }
+  .filtered {
+    background-color: $dark;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+  }
+  
+}
+
+.gymcard {
+border: 5px solid black;
+.card-image {
+  max-width: 100%;
+  height: auto;
+}
+}
+
+.homepagenav {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+
 
