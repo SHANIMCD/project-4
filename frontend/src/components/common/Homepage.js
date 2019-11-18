@@ -1,6 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 
+import ImageCarousel from './ImageCarousel'
 import FrameworkTestPage from './FrameworkTestPage'
 
 
@@ -9,19 +9,20 @@ class HomePage extends React.Component {
     super()
 
   }
-
+  
 
   render(){
-    
-    return (
-
+   
+    return (    
       <> 
-      <section></section>
+      <ImageCarousel />
+      {/* <img className="hp-image" src="https://static.onecms.io/wp-content/uploads/sites/35/2017/03/03190846/1200-woman-lifting-heavy-weights.jpg" /> */}
+      
        <section className="homepagenav">
-         <h1>This is the HomePage</h1>   
+         
          <FrameworkTestPage />
        </section>
-       <section></section>
+       
         
 
       </>
@@ -29,7 +30,7 @@ class HomePage extends React.Component {
     )
   }
 
+
+
 }
-
-
 export default HomePage

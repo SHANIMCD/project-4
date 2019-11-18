@@ -4,6 +4,7 @@ import axios from 'axios'
 
 import GymsIndex from '../gyms/GymsIndex'
 import GymCardIndex from '../gyms/GymCardIndex'
+import { throws } from 'assert'
 
 class SearchBox extends React.Component {
 
@@ -34,31 +35,43 @@ class SearchBox extends React.Component {
   }
 
   filteredGyms() {
-    const { discipline, search, gyms } = this.state
+    const { search, gyms } = this.state
+    // console.log(discipline)
     const re = new RegExp(search, 'i')
-    return gyms.filter(gym => {
-      return re.test(gym.name) && (gym.discipline === discipline || discipline === 'All')
+    const filtered = gyms.filter(gym => {
+      return re.test(gym.name)
     })
+    return this.filterDropdown(filtered)
+  }
+
+  filterDropdown(array) {
+    if (this.state.discipline === 'All') {
+      return array
+    }
+    return array.filter(disc => disc.discipline.discipline_type === this.state.discipline)
   }
 
 
   render() {
     console.log(this.state.gyms)
+    console.log(this.filteredGyms())
     return (
 
       <div className="filtercontainer" onChange={this.handleChange}>
+        <p>Search </p>
         <select onChange={this.handleChange} name="discipline">
           <option value="All">All</option>
           <option value="Bodybuilding">Bodybuilding</option>
           <option value="Pilates">Pilates</option>
           <option value="Crossfit">Crossfit</option>
         </select> 
-        <div className="searchcontainer">
-          <p>Search Class type</p>
+        <span className="searchcontainer">
+          
           <input placeholder="Search"  name="search" className="search-input"></input>
           <button className="search-button">search</button>
+          <hr />
           <div className="filtered">{this.filteredGyms().map(gym => <GymCardIndex key={gym.name} {...gym} />)}</div>
-        </div>
+        </span>
        
       </div>
         

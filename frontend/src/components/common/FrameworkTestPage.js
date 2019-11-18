@@ -12,12 +12,14 @@
 // import GymCardIndex from '../gyms/GymCardIndex'
 
 
-
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Paper from '@material-ui/core/Paper'
 import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
+
+
+
 
 const useStyles = makeStyles({
   root: {
@@ -35,16 +37,16 @@ export default function CenteredTabs() {
 
   return (
     <Paper className={classes.root}>
+      
       <Tabs
         value={value}
         onChange={handleChange}
-        indicatorColor="primary"
-        textColor="primary"
+        // indicatorColor="primary"
+        // textColor="primary"
         centered
+        className="hp-tab-style"
       >
-        <Tab label="Bodybuilding" />
-        <Tab label="Crossfit" />
-        <Tab label="Pilates" />
+        <Tab href="/gyms" label="Enter" /> 
       </Tabs>
     </Paper>
   )

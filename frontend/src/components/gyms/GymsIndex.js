@@ -3,7 +3,7 @@ import axios from 'axios'
 
 import SearchBox from '../common/SearchBox'
 // import GymCardShow from './GymCardShow'
-import GymCardIndex from './GymCardIndex'
+import Navbar from '../common/Navbar'
 
 class GymsIndex extends React.Component {
 
@@ -26,15 +26,14 @@ class GymsIndex extends React.Component {
     console.log(this.state)
     if (!this.state.gyms) return null
     return (
-    
+      
       <>
-        
+        <Navbar />
           <section>
+            
             <SearchBox />
           </section>
-          <section>
-            <h1>Photo</h1>
-          </section>
+         
 
                 
       </>

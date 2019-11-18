@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 // import GymCardIndex from './GymCardIndex'
 import GymCardShow from './GymCardShow'
-
+import Navbar from '../common/Navbar'
 
 
 class GymIndividual extends React.Component {
@@ -41,6 +41,7 @@ class GymIndividual extends React.Component {
       
       <>
       <body>
+        <Navbar />
         <section>
           <h1>Gym Individual page</h1>
         </section>
