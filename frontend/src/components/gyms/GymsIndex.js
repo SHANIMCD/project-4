@@ -5,6 +5,7 @@ import SearchBox from '../common/SearchBox'
 // import GymCardShow from './GymCardShow'
 import Navbar from '../common/Navbar'
 
+
 class GymsIndex extends React.Component {
 
   constructor() {
@@ -33,6 +34,7 @@ class GymsIndex extends React.Component {
             
             <SearchBox />
           </section>
+          
          
 
                 

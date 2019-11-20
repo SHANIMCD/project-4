@@ -14,7 +14,7 @@ class NestedClassSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Class
-        fields = ('id', 'title')
+        fields = ('id', 'title', 'description', 'class_level', 'class_duration', 'link')
 
 
 class NestedDisciplineSerializer(serializers.ModelSerializer):

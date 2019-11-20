@@ -36,19 +36,19 @@ class GymIndividual extends React.Component {
   
   render() {
     if (!this.state.gym) return null
+    console.log(this.state.gym)
     const { gym } = this.state
     return (
       
       <>
-      <body>
+      
         <Navbar />
         <section>
-          <h1>Gym Individual page</h1>
         </section>
         <section>
-          <GymCardShow key={gym._id} {...gym}/>
+          <GymCardShow key={gym.id} {...gym}/>
         </section>
-      </body>
+      
       </>
     )
   }

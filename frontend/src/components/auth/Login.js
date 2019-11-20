@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap'
 import NavBar from '../common/Navbar'
+import Auth from '../lib/Auth'
 import axios from 'axios'
 
 
@@ -29,10 +30,12 @@ class Login extends React.Component {
   handleSubmit(e) {
     e.preventDefault()
 
-    axios.post('/login', this.state.data)
+    axios.post('/api/login', this.state.data)
       .then(res => {
         Auth.setToken(res.data.token)
-        this.props.history.push('/gyms')
+        this.setState({ username: res.data.name })
+        console.log('Welcome', res.data )
+        this.props.history.push('/loggedin')
       })
   }
 

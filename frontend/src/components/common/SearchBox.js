@@ -2,9 +2,9 @@ import React from 'react'
 
 import axios from 'axios'
 
-import GymsIndex from '../gyms/GymsIndex'
+// import GymsIndex from '../gyms/GymsIndex'
 import GymCardIndex from '../gyms/GymCardIndex'
-import { throws } from 'assert'
+// import { throws } from 'assert'
 
 class SearchBox extends React.Component {
 
@@ -58,12 +58,12 @@ class SearchBox extends React.Component {
     return (
 
       <div className="filtercontainer" onChange={this.handleChange}>
-        <p>Search </p>
+        <p>Select an option below to choose preferred discipline</p>
         <select onChange={this.handleChange} name="discipline">
           <option value="All">All</option>
           <option value="Bodybuilding">Bodybuilding</option>
           <option value="Pilates">Pilates</option>
-          <option value="Crossfit">Crossfit</option>
+          <option value="CrossFit">Crossfit</option>
         </select> 
         <span className="searchcontainer">
           
@@ -74,9 +74,7 @@ class SearchBox extends React.Component {
         </span>
        
       </div>
-        
     
-
 
     )
   
