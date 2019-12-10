@@ -35,7 +35,7 @@ class Login extends React.Component {
         Auth.setToken(res.data.token)
         this.setState({ username: res.data.name })
         console.log('Welcome', res.data )
-        this.props.history.push('/loggedin')
+        this.props.history.push('/gyms/new')
       })
   }
 

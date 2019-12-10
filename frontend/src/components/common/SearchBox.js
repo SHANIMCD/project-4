@@ -1,9 +1,9 @@
 import React from 'react'
-
 import axios from 'axios'
 
 // import GymsIndex from '../gyms/GymsIndex'
 import GymCardIndex from '../gyms/GymCardIndex'
+import GymCardShow from '../gyms/GymCardShow'
 // import { throws } from 'assert'
 
 class SearchBox extends React.Component {
@@ -52,12 +52,14 @@ class SearchBox extends React.Component {
   }
 
 
+
   render() {
     console.log(this.state.gyms)
     console.log(this.filteredGyms())
     return (
+      <>
 
-      <div className="filtercontainer" onChange={this.handleChange}>
+      <div className="filtercontainer" id="searchbox" onChange={this.handleChange}>
         <p>Select an option below to choose preferred discipline</p>
         <select onChange={this.handleChange} name="discipline">
           <option value="All">All</option>
@@ -72,9 +74,9 @@ class SearchBox extends React.Component {
           <hr />
           <div className="filtered">{this.filteredGyms().map(gym => <GymCardIndex key={gym.name} {...gym} />)}</div>
         </span>
-       
       </div>
-    
+  
+    </>
 
     )
   

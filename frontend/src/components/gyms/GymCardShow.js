@@ -10,12 +10,12 @@ import GymsIndex from './GymsIndex'
 //   ))
 // }
 
-const GymCardShow = ({ name, image, lat, lon, address, discipline: { discipline_type }, classes, id, link }) => (
-  <div className="gymcard-show">
+const GymCardShow = ({ name, image, lat, lon, address, discipline: {discipline_type}, classes, id, link }) => (
+  <div className="gymcard-show" id="gym">
     <Card key={id} className="gymcard-show-1" style={{ width: '30rem' }}>
       <Card.Body>
         <Card.Title className="card-title" key={name}>{name}</Card.Title>
-        <Card.Text className="card-text" key={discipline_type}></Card.Text>
+        <Card.Text className="card-text" key={discipline_type}>{discipline_type}</Card.Text>
         <Card.Img className="card-image" key={image} src={image}></Card.Img>
       
         <Card.Text className="card-text" key={lat}></Card.Text>
@@ -28,12 +28,13 @@ const GymCardShow = ({ name, image, lat, lon, address, discipline: { discipline_
     <Card className="gymcard2" style={{ width: '30rem' }}>
       <Card.Body>
         <Card.Title className="card-title"></Card.Title>
+        
         <ul>
           
           {classes.map(clas => (
             <>
             <li key={clas.id}>
-              <Link to={clas.link}>{clas.title}
+              <Link to={clas.link}>Class name: {clas.title}
               </Link>
             </li>  
             <li>

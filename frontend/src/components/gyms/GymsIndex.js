@@ -4,6 +4,7 @@ import axios from 'axios'
 import SearchBox from '../common/SearchBox'
 // import GymCardShow from './GymCardShow'
 import Navbar from '../common/Navbar'
+// import GymCardShow from './GymCardShow'
 
 
 class GymsIndex extends React.Component {
@@ -16,12 +17,16 @@ class GymsIndex extends React.Component {
     }
   }
 
+  
+
   componentDidMount() {
     axios.get('/api/gyms')
       .then(res => this.setState({ gyms: res.data }))
       .catch(err => console.log(err))
   }
 
+
+ 
 
   render() {
     console.log(this.state)
@@ -30,9 +35,13 @@ class GymsIndex extends React.Component {
       
       <>
         <Navbar />
-          <section>
-            
+          <section id="gyms">
+          
             <SearchBox />
+          
+            {/* <GymCardShow /> */}
+        
+           
           </section>
           
          

@@ -14,11 +14,17 @@
       "classes": [
           {
               "id": 14,
-              "title": "Pilates L1"
+              "title": "Pilates L1",
+              "class_level": "All",
+              "category": "holistic, strength",
+              "description": "Build the strength to smash life, without the incredible bulk. This is all about control: precise movements that stretch and tone to improve your posture, increase your flexibility and reinforce your core. You know what they say. Hit the mat and you’ll never go back.",
+              "class_availability": "mornings",
+              "class_duration": "45 minutes",
+              "link": "https://staging.gymbox.com/classes/pilates"
           },
           {
               "id": 15,
-              "title": "Contemporary Pilates"
+              "title": "Contemporary Pilates",
           },
           {
               "id": 16,

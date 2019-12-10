@@ -9,12 +9,13 @@ class NestedGymSerializer(serializers.ModelSerializer):
         fields = ('id' 'name')
 
 
+#Serializer with the JSON required fields request
 class NestedClassSerializer(serializers.ModelSerializer):
 
 
     class Meta:
         model = Class
-        fields = ('id', 'title', 'description', 'class_level', 'class_duration', 'link')
+        fields = ('title', 'class_level', 'description', 'class_duration', 'link')
 
 
 class NestedDisciplineSerializer(serializers.ModelSerializer):

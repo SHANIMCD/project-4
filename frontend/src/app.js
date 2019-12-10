@@ -11,7 +11,7 @@ import SearchBox from './components/common/SearchBox'
 import GymsIndex from './components/gyms/GymsIndex'
 import GymIndividual from './components/gyms/GymIndividual'
 import HomePage from './components/common/Homepage'
-import FrameworkTestPage from './components/common/FrameworkTestPage'
+// import FrameworkTestPage from './components/common/FrameworkTestPage'
 import Login from './components/auth/Login'
 // import LoggedIn from './components/auth/LoggedIn'
 import AddGymForm from './components/gyms/AddGymForm'
@@ -24,14 +24,15 @@ const App = () => (
     <main>
       
       <Switch>
-        <Route exact path="/" component={HomePage} />
+       
         {/* <SecureRoute path="/loggedin" component={LoggedIn} /> */}
-        <Route path="/gyms/new" component={AddGymForm} />
-        <Route path="/gyms/:id" component={GymIndividual} />
-        <Route path="/searchtestpage" component={SearchBox} />
+        <Route path="/gyms/new/" component={AddGymForm} />
+        <Route path="/gyms/:id/" component={GymIndividual} />
+        <Route path="/search/" component={SearchBox} />
         <Route path="/gyms/" component={GymsIndex} />
-        <Route path="/test" component={FrameworkTestPage} />
+        {/* <Route path="/test" component={FrameworkTestPage} /> */}
         <Route path="/login" component={Login} />
+        <Route exact path="/" component={HomePage} />
       </Switch>
     </main>
   </BrowserRouter>

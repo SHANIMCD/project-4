@@ -1,21 +1,6 @@
 from django.db import models
 
 
-# class Class_level(models.Model):
-#     level = models.CharField(max_length=50)
-
-#     def __str__(self):
-#         return self.level
-
-
-# class Class_category(models.Model):
-#     class_category = models.CharField(max_length=50)   
-
-#     def __str__(self):
-#         return self.class_category
-
-
-
 class Class(models.Model):
     title = models.CharField(max_length=50)
     class_level = models.CharField(max_length=100)
@@ -53,7 +38,7 @@ class Gym(models.Model):
     classes = models.ManyToManyField(
         Class,
         related_name='gyms',
-        null=True
+        blank=True
         )
     
     def __str__(self):

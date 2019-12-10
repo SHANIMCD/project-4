@@ -22,6 +22,18 @@ body {
   height: 100vh;
 }
 
+.homepage-title {
+  font-family: 'Didact Gothic', sans-serif;
+  text-transform: uppercase;
+  font-size: 10vw;
+  font-weight: 1000;
+  // box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.9);
+  color: $pop-yellow;
+  // background-color: $neutral;
+  // border-radius: 100%;
+  margin: 2%;
+}
+
 h1 {
   color: white;
   font-family: 'Quicksand', sans-serif;
@@ -55,7 +67,8 @@ li {
     opacity: 80%;
     color: white;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
+    position: fixed;
 
 
     a {
@@ -74,6 +87,11 @@ li {
     }
     
   }
+
+  ul.nav {
+    margin-left: 0;
+  }
+
 
   a:hover {
     background-color: rgb(33, 156, 64);
@@ -141,14 +159,14 @@ text-align: center;
 }
 }
 
-.addgym {
-text-align: center;
-position: fixed;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+// .addgym {
+// text-align: center;
+// position: fixed;
+// top: 50%;
+// left: 50%;
+// transform: translate(-50%, -50%);
 
-}
+// }
 
 
 .gymcard-show-1 {
@@ -180,7 +198,7 @@ color: $pop-green;
 .hp-tab-style {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   color: $light;
-  background-color: $darkest;
+  background-color: $dark;
  
 }
 
@@ -204,7 +222,27 @@ color: $pop-green;
 
 // Login Page 
 .formcontainer {
-  text-align: center;
+  text-align: right;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  // transform: translate(-50%, -50%);
+
+  color: $light;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  // form {
+  //   display: flex;
+  //   justify-content: center;
+  // }
+}
+
+//Ad form page
+.add-formcontainer {
+
+  text-align: right;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -215,11 +253,8 @@ color: $pop-green;
   font-family: 'Quicksand', sans-serif;
   display: flex;
   flex-direction: column;
-  form {
-    display: flex;
-    justify-content: center;
-  }
 }
+
 
 
 // -- Show Page Gym Card -- //
@@ -235,6 +270,11 @@ color: $pop-green;
 
 }
 
+.class-container {
+  display: flex;
+  // border: 3px solid $light;
+  // height: 40vh;
+}
 
 
 

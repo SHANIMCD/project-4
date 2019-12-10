@@ -1,14 +1,15 @@
 import React from 'react'
 import { Nav, NavItem, NavLink } from 'reactstrap'
-import { Link, withRouter } from '../lib/Auth'
+// import { Link, withRouter } from '../lib/Auth'
+import ReactDOM from 'react-dom'
 
 
-const Navigation = (props) => {
+const Navigation = () => {
   return (
     <div className="Nav-style">      
       <hr />
       <Nav>
-        <NavLink className="nav-link-left" href="/" >Home</NavLink> <NavLink className="nav-link-left" href="/gyms/new"> Suggest a gym</NavLink> <NavLink href="{% url 'admin:index' %}" className="nav-link-right">Admin Login</NavLink>
+        <NavLink className="nav-link-left" href="/" >Home</NavLink> <NavLink className="nav-link-left" href="/gyms" >Gyms</NavLink> <NavLink className="nav-link-left" href="/gyms/new"> Suggest a gym</NavLink>
       </Nav>
       <hr />
     </div>

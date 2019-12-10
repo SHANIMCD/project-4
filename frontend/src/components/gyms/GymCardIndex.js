@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
+import { CardText } from 'react-bootstrap/Card'
 // import Image from 'react-bootstrap/Image'
+
+
 
 
 const GymCardIndex = ({ name, image, discipline: { discipline_type } , id }) => (

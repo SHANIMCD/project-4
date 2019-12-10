@@ -43,11 +43,9 @@ class GymIndividual extends React.Component {
       <>
       
         <Navbar />
-        <section>
-        </section>
-        <section>
+       
           <GymCardShow key={gym.id} {...gym}/>
-        </section>
+        
       
       </>
     )
