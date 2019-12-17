@@ -21,7 +21,7 @@ The user enters the website and sees a list of all the venues.
 <br />
 To find the desired discipline, use the drop down menu to select your preference.
 <br />
-Clicking on the chosen venue will then show a list of all the classes on offer there. Each class comes with a link that will take you to the website to get more information or to join/book
+Clicking on the chosen venue will then show a list of all the classes on offer there. Each class comes with a link that will take you to the website to get more information or to join/book.
 <br />
 
 <a href="https://imgur.com/BhcFk8N"><img src="https://i.imgur.com/BhcFk8Nl.png" title="source: imgur.com" /></a>
@@ -38,9 +38,9 @@ Once submitted, the list on the gym list page will include the added gym at the 
 
 
 # Tools
-I used Python & Django together to create the models, views and serializers.  My main model was the gym model, the discipline model represented my one-to-many relationship and class model repsresented the many to many relationship.  Both the discipline and and class models were nested in the gym model
+I used Python & Django together to create the models, views and serializers.  My main model was the gym model, the discipline model represented my one-to-many relationship and class model repsresented the many to many relationship.  Both the discipline and and class models were nested in the gym model.
 The UI used to track the models was TablePlus.  
-Testing the serialized content models and creating the requests was done using Insomnia
+Testing the serialized content models and creating the requests was done using Insomnia.
 <br />
 React was used for the front end creation of how the the components are displayed.
 <br />
@@ -53,7 +53,7 @@ My major challenge during this project was in the form submission.  In previous 
 My solution was:
 <br />
 - In state, create a data object with all the required fields
-- Nested the class model inside data as an array, with all required class fields there
+- Nested the class model inside data as an array, with all required class fields there.
 <br />
 
 ```
@@ -92,7 +92,7 @@ class AddGymForm extends React.Component {
 ```
 
 <br />
-- For the Class input section of the form, I created a classes map with the required fields in there
+- For the Class input section of the form, I created a classes map with the required fields in there.
 <br />
 
 ```
@@ -123,7 +123,7 @@ class AddGymForm extends React.Component {
                 </div>
 ```
 <br />
-- Next I created a function that would keep the input if any is placed in there as well as populate a new class form.  The HandleChange, logged the changes for the whole form, the AddClass was just for the class section
+- Next I created a function that would keep the input if any is placed in there as well as populate a new class form.  The HandleChange, logged the changes for the whole form, the AddClass was just for the class section.
 <br />
 
 ```
@@ -142,7 +142,7 @@ class AddGymForm extends React.Component {
   ```
 
 
-- Then I added the AddClass function to a button element near the end of the form and named it 'add a new class' which on click, populates the fields to fill in and add another class without submitting the whole form
+- Then I added the AddClass function to a button element near the end of the form and named it 'add a new class' which on click, populates the fields to fill in and add another class without submitting the whole form.
 
 # Installation 
 ```
