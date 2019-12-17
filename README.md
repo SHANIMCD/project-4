@@ -14,7 +14,7 @@ Worked on Solo
 
 # Description
 Fitness space is a one stop destination to finding gyms that specialise in classes under a specific gym.  It is here as an antedote to commercial gyms.
-<br />
+
 The three disciplines that I picked were Pilates, CrossFit & Bodybuilding.
 <br />
 The user enters the website and sees a list of all the venues.  
@@ -55,15 +55,105 @@ My solution was:
 - In state, create a data object with all the required fields
 - Nested the class model inside data as an array, with all required class fields there
 <br />
-<a href="https://imgur.com/YjVSeta"><img src="https://i.imgur.com/YjVSetal.png" title="source: imgur.com" /></a>
+
+```
+class AddGymForm extends React.Component {
+
+  constructor() {
+    super() 
+
+    this.state = {
+      data: {
+        image: '',
+        name: '',
+        lat: '',
+        lon: '',
+        address: [],
+        discipline: {
+          discipline_type: ''
+        },
+        classes: [
+          {
+            title: '',
+            class_level: '',
+            description: '',
+            class_duration: '',
+            link: ''
+          }
+        ]
+      },
+      errors: {}
+    }
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+    // this.onchange = this.onchange.bind(this)
+    this.addClass = this.addClass.bind(this)
+  }
+```
+
+<br />
 - For the Class input section of the form, I created a classes map with the required fields in there
-<a href="https://imgur.com/BJRDWur"><img src="https://i.imgur.com/BJRDWurl.png" title="source: imgur.com" /></a>
+<br />
+
+```
+{this.state.data.classes.map((_class, index) => {
+              return (
+                <div key={index}>
+                  <FormGroup >
+                    <Label for="title">Class Title</Label>
+                    <Input type="text" value={_class.title || ''} name="title" id="title" placeholder="Title" />
+                  </FormGroup>
+                  <FormGroup>
+                    <Label for="class_level">Class Level</Label>
+                    <Input type="text" value={_class.class_level || ''} name="class_level" id="class_Level" placeholder="class Level" />
+                  </FormGroup>
+                  <FormGroup>
+                    <Label for="description">Description</Label>
+                    <Input type="text" value={_class.description || '' } name="description" id="desription" placeholder="Description" />
+                  </FormGroup>
+                  <FormGroup>
+                    <Label for="class_duration">Class duration</Label>
+                    <Input type="text" value={_class.class_duration || ''} name="class_duration" id="class_duration" placeholder="Duration" />
+                  </FormGroup>
+                  <FormGroup>
+                    <Label for="link">Link</Label>
+                    <Input type="text" value={_class.link || '' } name="link" id="link" placeholder="Link" />
+                  </FormGroup>
+                  <button type="button" onClick={this.addClass}>Add another class</button>
+                </div>
+```
+<br />
 - Next I created a function that would keep the input if any is placed in there as well as populate a new class form.  The HandleChange, logged the changes for the whole form, the AddClass was just for the class section
 <br />
-<a href="https://imgur.com/GCNULfQ"><img src="https://i.imgur.com/GCNULfQl.png" title="source: imgur.com" /></a>
-<br />
+
+```
+ handleChange(e) {
+    console.log('these be the changes')
+    const data = { ...this.state.data, [e.target.name]: e.target.value }
+    const errors = { ...this.state.errors, [e.target.name]: '' }
+    this.setState({ data, errors })
+  }
+
+  addClass() {
+    console.log('clicked')
+    const classes = [...this.state.data.classes, {} ]
+
+    this.setState({ data: { ...this.state.data, classes } })} 
+  ```
+
+
 - Then I added the AddClass function to a button element near the end of the form and named it 'add a new class' which on click, populates the fields to fill in and add another class without submitting the whole form
 
+# Installation 
+```
+- in the terminal: install the dependencies:
+  - $ npm i
+- Set up the virtual environment
+  - $ brew install pipenv
+  - $ pipenv shell
+- Run the server
+  - $ python manage.py runserver 
+```
 # Future Improvements 
 
 With more time, I would like to have a map on the individual gym page instead of just the address which is why I initially included latitude and longitude on the gym model.  I had done some research on MapBox GL which is also what I used for another project.
